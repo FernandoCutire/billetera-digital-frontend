@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import { Account } from  '../shared/Account';
 import {AccountService} from '../shared/account.service';

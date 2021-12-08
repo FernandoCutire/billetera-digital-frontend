@@ -12,22 +12,40 @@
   </ion-header>
 
 
-  <ion-item>
-    <ion-label>Cuenta Origen</ion-label>
-    <ion-select value="dog">
-      <ion-select-option value="Cuenta1">0123218784654</ion-select-option>
-      <ion-select-option value="Cuenta2">21218651793</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <ion-label>Cuenta Destino</ion-label>
-    <ion-select value="dog">
-      <ion-select-option value="Cuenta1">0123218784654</ion-select-option>
-      <ion-select-option value="Cuenta2">21218651793</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <ion-label>Monto (En dólares)</ion-label>
-    <ion-input placeholder="placeholder" type="number"></ion-input>
-  </ion-item>
+
+  <form [formGroup]="updateAccountForm" (ngSubmit)="updateForm()">
+
+    <ion-item>
+      <ion-label>Cuenta Origen</ion-label>
+      <ion-select value="numCuenta" formControlName="numCuenta">
+        <ion-select-option *ngFor="let account of Accounts" value={{account.numCuenta}}>
+          {{account.numCuenta}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cuenta Destino</ion-label>
+      <ion-select value="numCuenta" formControlName="numCuenta">
+        <ion-select-option *ngFor="let account of Accounts" value={{account.numCuenta}}>
+          {{account.numCuenta}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Monto (En dólares)</ion-label>
+      <ion-input placeholder="Monto" type="number"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="primary" shape="full"
+                    expand="block" (click)="presentLoading()">
+          Realizar transacción
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
 </ion-content>

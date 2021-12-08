@@ -17,11 +17,14 @@ export class AccountService {
     return this.accountListRef;
   }
 
-  updateAccount(id, apt: Account) {
+  getAccount(id: string) {
+   this.accountRef = this.db.object('/account/' + id);
+   return this.accountRef;
+  }
+
+  updateSaldo(id, apt: Account['saldoDisponible']) {
     return this.accountRef.update({
-      nomCuenta: apt.nomCuenta,
-      numCuenta: apt.numCuenta,
-      saldoDisponible: apt.saldoDisponible
+      saldoDisponible: apt
     });
   }
 }
