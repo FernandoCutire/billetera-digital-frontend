@@ -11,7 +11,23 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container
-    name="Aquí podrás ver todas tus transferencias"
-  ></app-explore-container>
+
+  <ion-item>
+    <ion-label>Cuenta Origen</ion-label>
+    <ion-select value="dog">
+      <ion-select-option value="Cuenta1">0123218784654</ion-select-option>
+      <ion-select-option value="Cuenta2">21218651793</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cuenta Destino</ion-label>
+    <ion-select value="dog">
+      <ion-select-option value="Cuenta1">0123218784654</ion-select-option>
+      <ion-select-option value="Cuenta2">21218651793</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Monto (En dólares)</ion-label>
+    <ion-input placeholder="placeholder" type="number"></ion-input>
+  </ion-item>
 </ion-content>
