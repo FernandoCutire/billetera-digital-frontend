@@ -13,14 +13,15 @@ const targetPath = isProduction
 const environmentFileContent = `
 export const environment = {
    production: ${isProduction},
-   apiKey: '${process.env.apiKey}',
-   authDomain: '${process.env.authDomain}',
-   databaseURL: '${process.env.databaseURL}',
-   projectId: '${process.env.projectId}',
-   storageBucket: '${process.env.storageBucket}',
-   messagingSenderId: '${process.env.messagingSenderId}',
-   appId: '${process.env.appId}',
-
+   firebaseConfig: {
+     apiKey: '${process.env.apiKey}',
+     authDomain: '${process.env.authDomain}',
+     databaseURL: '${process.env.databaseURL}',
+     projectId: '${process.env.projectId}',
+     storageBucket: '${process.env.storageBucket}',
+     messagingSenderId: '${process.env.messagingSenderId}',
+     appId: '${process.env.appId}',
+   }
 };
 `;// write the content to the respective file
 writeFile(targetPath, environmentFileContent, (err) => {
