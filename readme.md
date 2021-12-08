@@ -26,6 +26,7 @@ $ npm install
 
 # Inicializar ionic/angular
 $ npm run start
+
 ```
 
 
@@ -36,3 +37,23 @@ El proyecto usa las siguientes librerias:
 1. Ionic/Angular
 2. Firebase
 3. Sass
+
+### Formato de commits
+
+[ícono] [tipo de commit]: [mensaje] - [descripción]
+
+`🐛 FIX: Mensaje - Arreglo de bug`
+
+`🚀 RELEASE: Mensaje - Nueva versión a producción`
+
+`📖 DOC: Mensaje - Documentación`
+
+`👌 IMPROVE: Mensaje - Mejora de alguna funcionalidad`
+
+`📦 NEW: Mensaje - Nueva característica añadida`
+
+`🧪 TEST: Mensaje - Test generado`
+
+`⚙️ PROGRESS: Mensaje - Se utiliza para hacer save-point`
+
+`🌠 MERGE: Mensaje - Se unen ramas de git`
