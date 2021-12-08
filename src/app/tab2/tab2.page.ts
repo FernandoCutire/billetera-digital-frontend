@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {AccountService} from '../shared/account.service';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Account} from '../shared/Account';
 import { LoadingController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-tab2',
@@ -33,7 +34,8 @@ export class Tab2Page implements OnInit{
 
   ngOnInit() {
     this.updateAccountForm = this.fb.group({
-      numCuenta: [''],
+      cuentaOrigen: [''],
+      cuentaDestino: [''],
       saldoDisponible: ['']
     });
     console.log(this.updateAccountForm.value);
@@ -68,6 +70,7 @@ export class Tab2Page implements OnInit{
       })
       .catch(error => console.log(error));
   };
+
 
   async presentLoading() {
     const loading = await this.loadingController.create({

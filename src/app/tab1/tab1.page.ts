@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Account } from  '../shared/Account';
 import {AccountService} from '../shared/account.service';
+import { IonInfiniteScroll } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -8,6 +9,8 @@ import {AccountService} from '../shared/account.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit{
+  @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
+
   // eslint-disable-next-line @typescript-eslint/naming-convention
   Accounts = [];
 
@@ -32,6 +35,10 @@ export class Tab1Page implements OnInit{
     this.aptService.getAccountList().valueChanges().subscribe(res => {
       console.log(res);
     });
+  }
+
+  toggleInfiniteScroll() {
+    this.infiniteScroll.disabled = !this.infiniteScroll.disabled;
   }
 
 }

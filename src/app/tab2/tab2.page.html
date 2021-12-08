@@ -17,25 +17,28 @@
 
     <ion-item>
       <ion-label>Cuenta Origen</ion-label>
-      <ion-select value="numCuenta" formControlName="numCuenta">
-        <ion-select-option *ngFor="let account of Accounts" value={{account.numCuenta}}>
-          {{account.numCuenta}}
+      <ion-select value="cuentaOrigen" >
+        <ion-select-option *ngFor="let account of Accounts" value={{account.nomCuenta}}
+                           formControlName="cuentaOrigen">
+          {{account.nomCuenta}}
         </ion-select-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
       <ion-label>Cuenta Destino</ion-label>
-      <ion-select value="numCuenta" formControlName="numCuenta">
-        <ion-select-option *ngFor="let account of Accounts" value={{account.numCuenta}}>
-          {{account.numCuenta}}
+      <ion-select value="cuentaDestino" >
+        <ion-select-option *ngFor="let account of Accounts" value={{account.nomCuenta}}
+                           formControlName="cuentaDestino">
+          {{account.nomCuenta}}
         </ion-select-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
       <ion-label>Monto (En dólares)</ion-label>
-      <ion-input placeholder="Monto" type="number"></ion-input>
+      <ion-input value="saldoDisponible" formControlName="saldoDisponible"
+                 placeholder="Monto" type="number"></ion-input>
     </ion-item>
 
     <ion-row>

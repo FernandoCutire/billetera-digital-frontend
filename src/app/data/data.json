@@ -1,0 +1,39 @@
+{
+  "accounts": {
+    "AHORROS_NAVIDAD" : {
+      "nomCuenta": "AHORROS NAVIDAD",
+      "numCuenta": "001231315",
+      "saldoDisponible": "150"
+    },
+    "AHORROS_EMERGENCIA" : {
+      "nomCuenta": "AHORROS EMERGENCIA",
+      "numCuenta": "021321856",
+      "saldoDisponible": "400"
+    },
+    "AHORROS_VACACIONES" : {
+      "nomCuenta": "AHORROS VACACIONES",
+      "numCuenta": "87569845",
+      "saldoDisponible": "200"
+    },
+    "AHORROS_COMPARTIDOS" : {
+      "nomCuenta": "AHORROS COMPARTIDOS",
+      "numCuenta": "35468025",
+      "saldoDisponible": "300"
+    },
+    "CUENTA_CORRIENTE" : {
+      "nomCuenta": "CUENTA CORRIENTE",
+      "numCuenta": "655484893",
+      "saldoDisponible": "1000"
+    },
+    "AHORROS_CASA" : {
+      "nomCuenta": "AHORROS CASA",
+      "numCuenta": "684321685",
+      "saldoDisponible": "15000"
+    },
+    "AHORROS_JUBILACION" : {
+      "nomCuenta": "AHORROS JUBILACION",
+      "numCuenta": "684815669",
+      "saldoDisponible": "12500"
+    }
+  }
+}

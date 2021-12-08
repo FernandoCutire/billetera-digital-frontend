@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-import { LoadingController } from '@ionic/angular';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 

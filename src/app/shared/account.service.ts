@@ -27,4 +27,11 @@ export class AccountService {
       saldoDisponible: apt
     });
   }
+
+  transaccion(cuentaOrigen: Account, cuentaDestino: Account, monto) {
+    this.updateSaldo(cuentaOrigen,cuentaOrigen.saldoDisponible + monto);
+    this.updateSaldo(cuentaDestino,cuentaDestino.saldoDisponible + monto);
+  };
+
+
 }

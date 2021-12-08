@@ -5,7 +5,7 @@
 <br/>
 
 
-Repositorio del Sistema de Diseño de la Plataforma SEVA: Sistema Educativo Virtual de Ayudinga!
+Repositorio del Proyecto de Billetera Digital
 
 
 </td></tr></table>
