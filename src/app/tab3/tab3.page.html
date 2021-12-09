@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title> Perfil </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -38,4 +38,19 @@
       <ion-label> Proyectos: portfolio.fernandocutire.com</ion-label>
     </ion-item>
   </ion-card-header>
+
+  <ion-card-header>
+  <ion-card-title>Tus últimos movimientos</ion-card-title>
+  <ion-card *ngFor="let transaction of Transactions" class="transaction-list">
+    <ion-card-header>
+      <ion-card-subtitle>Cuenta Origen: {{transaction.cuentaOrigen}}</ion-card-subtitle>
+      <ion-card-title>Cuenta Destino: {{transaction.cuentaDestino}}</ion-card-title>
+      <ion-card-title>
+        Monto {{transaction.monto}} $
+      </ion-card-title>
+    </ion-card-header>
+
+  </ion-card>
+  </ion-card-header>
+
 </ion-content>

@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title> Transferencias </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,17 +16,17 @@
   <form [formGroup]="updateAccountForm" (ngSubmit)="updateForm()">
 
     <ion-item>
-      <ion-label>Cuenta Origen</ion-label>
+      <ion-label>Desde</ion-label>
       <ion-select value="cuentaOrigen" >
         <ion-select-option *ngFor="let account of Accounts" value={{account.nomCuenta}}
-                           formControlName="cuentaOrigen">
+                           formControlName="cuentaOrigen" placeholder="CuentaOrigen">
           {{account.nomCuenta}}
         </ion-select-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
-      <ion-label>Cuenta Destino</ion-label>
+      <ion-label>Hacia</ion-label>
       <ion-select value="cuentaDestino" >
         <ion-select-option *ngFor="let account of Accounts" value={{account.nomCuenta}}
                            formControlName="cuentaDestino">
@@ -36,7 +36,7 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Monto (En dólares)</ion-label>
+      <ion-label>Monto</ion-label>
       <ion-input value="saldoDisponible" formControlName="saldoDisponible"
                  placeholder="Monto" type="number"></ion-input>
     </ion-item>

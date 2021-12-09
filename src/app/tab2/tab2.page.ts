@@ -66,7 +66,7 @@ export class Tab2Page implements OnInit{
   updateForm() {
     this.aptService.updateSaldo(this.id, this.updateAccountForm.value)
       .then(() => {
-        this.router.navigate(['/tabs/tab1']);
+        this.router.navigate(['/tabs/perfil']);
       })
       .catch(error => console.log(error));
   };

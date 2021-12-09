@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title> Cuentas</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -11,16 +11,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card *ngFor="let account of Accounts" class="user-list">
+  <ion-card *ngFor="let account of Accounts" class="account-list">
       <ion-card-header>
         <ion-card-subtitle>{{account.nomCuenta}}</ion-card-subtitle>
         <ion-card-title>{{account.numCuenta}}</ion-card-title>
+        <ion-card-title>
+          El saldo disponible es de: {{account.saldoDisponible}} $
+        </ion-card-title>
+
       </ion-card-header>
 
       <ion-card-content>
-        El saldo disponible es de: {{account.saldoDisponible}} $
       </ion-card-content>
-     </ion-card>
+   </ion-card>
 
 
 </ion-content>

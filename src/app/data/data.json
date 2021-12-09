@@ -35,5 +35,27 @@
       "numCuenta": "684815669",
       "saldoDisponible": "12500"
     }
+  },
+  "transactions": {
+    "TRANSACCION_CORRI_EMER": {
+      "cuentaOrigen": "CUENTA_CORRIENTE",
+      "cuentaDestino": "AHORROS_EMERGENCIA",
+      "monto": 80
+    },
+    "TRANSACCION_CORRI_VAC": {
+      "cuentaOrigen": "CUENTA_CORRIENTE",
+      "cuentaDestino": "AHORROS_VACACIONES",
+      "monto": 70
+    },
+    "TRANSACCION_CORRI_JUBI": {
+      "cuentaOrigen": "CUENTA_CORRIENTE",
+      "cuentaDestino": "AHORROS_JUBILACION",
+      "monto": 2000
+    },
+    "TRANSACCION_COM_CASA": {
+      "cuentaOrigen": "AHORROS_COMPARTIDOS",
+      "cuentaDestino": "AHORROS_CASA",
+      "monto": 1500
+    }
   }
 }
