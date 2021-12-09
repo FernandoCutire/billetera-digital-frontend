@@ -22,10 +22,13 @@ npm-debug.log*
 /.sass-cache
 /.sourcemaps
 /.versions
-/.vscode
 /coverage
 /dist
 /node_modules
 /platforms
 /plugins
 /www
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

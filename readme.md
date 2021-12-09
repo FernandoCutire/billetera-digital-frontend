@@ -2,21 +2,26 @@
 
 # Billetera digital
 
-Repositorio del Proyecto de Billetera Digital, una nueva experiencia de transferencias
-
-</td></tr></table>
-
-## Tabla de contenido
-
-
-
-## Funcionamiento
-
+Repositorio del Proyecto de Billetera Digital, una nueva experiencia digital al transferir
 <p align="center">
   <img src="imgs/billeteraDigital.gif" alt="Billetera Digital gif">
 </p>
 
+</td></tr></table>
 
+## Tabla de contenido
+- [Requisitos](#requisitos)
+- [Instalación](#instalación)
+- [Entidades](#entidades)
+  - [Account](#account)
+  - [Transactions](#transactions)
+- [Tecnologías](#tecnologías)
+- [Estilos de commits](#estilos-de-commits)
+  - [Formato de commits](#formato-de-commits)
+
+
+
+## Funcionamiento
 El proyecto consta de tres tabs, la primera siendo para
 visualizar las cuentas, la segunda para realizar transacciones
 y la tercera para ver el perfil de la persona y ver sus últimos movimientos.
@@ -39,14 +44,12 @@ Dentro de tabs/perfil visualizaremos nuestro perfil y nuestros ultimos movimient
 </p>
 
 
-
-
 ## Requisitos
 
 * [Node v13.9.0 o reciente](https://nodejs.org/es/)
-* Angular 12
-* Ionic Framework Angular 5 o posterior
-* Ionic CLI 6 o posterior
+* [Angular 12](https://angular.io/)
+* [Ionic Framework Angular 5 o posterior](https://ionicframework.com/docs/angular/your-first-app)
+* [Ionic CLI 6 o posterior](https://ionicframework.com/docs/cli)
 
 ## Instalación
 
@@ -138,6 +141,9 @@ El proyecto usa las siguientes librerias:
 1. Ionic/Angular
 2. Firebase
 3. Sass
+
+
+## Estilos de commits
 
 ### Formato de commits
 
